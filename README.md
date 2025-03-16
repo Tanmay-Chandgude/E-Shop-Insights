@@ -23,7 +23,7 @@ sidebar and statistics in cards using HTML, CSS and Bootstrap.
 
 ## 📸 **Screenshots**  
 ### 👉 **Dashboard View:**  
-*(Add a screenshot here)*  
+![Dashboard Screenshot](Assets/Dashboard.png)
 
 ### 👉 **Sidebar Collapsed:**  
 *(Add a screenshot here)*  
