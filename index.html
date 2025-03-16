@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce Admin Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="wrapper">
+  <!-- Sidebar -->
+  <nav id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <h3>Admin Panel</h3>
+    </div>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" href="#dashboard">📊 Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#orders">🛒 Orders</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#products">📦 Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#customers">👥 Customers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#reports">📈 Reports</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#settings">⚙️ Settings</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div id="content">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button id="sidebarToggle" class="btn btn-dark">
+        ➡
+      </button>
+      <a class="navbar-brand ml-2" href="#">Admin Dashboard</a>
+    </nav>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="mt-4">
+      <h1>Dashboard</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5>Total Orders</h5>
+              <p>1,245</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5>Revenue</h5>
+              <p>$45,320</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5>New Customers</h5>
+              <p>128</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Other Sections -->
+    <section id="orders" class="mt-5">
+      <h2>Orders</h2>
+      <p>List of recent orders will be displayed here...</p>
+    </section>
+
+    <section id="products" class="mt-5">
+      <h2>Products</h2>
+      <p>Product details and inventory status will be shown here...</p>
+    </section>
+
+    <section id="customers" class="mt-5">
+      <h2>Customers</h2>
+      <p>Customer information and analytics will be shown here...</p>
+    </section>
+
+    <section id="reports" class="mt-5">
+      <h2>Reports</h2>
+      <p>Sales reports and performance insights will be shown here...</p>
+    </section>
+
+    <section id="settings" class="mt-5">
+      <h2>Settings</h2>
+      <p>Admin settings and configurations will be shown here...</p>
+    </section>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- JavaScript for Sidebar Toggle -->
+<script>
+  const sidebar = document.getElementById('sidebar');
+  const sidebarToggle = document.getElementById('sidebarToggle');
+  const content = document.getElementById('content');
+
+  let isSidebarOpen = true;
+
+  sidebarToggle.addEventListener('click', () => {
+    if (isSidebarOpen) {
+      sidebar.classList.add('collapsed');
+      content.classList.add('expanded');
+      sidebarToggle.innerHTML = '➡';
+    } else {
+      sidebar.classList.remove('collapsed');
+      content.classList.remove('expanded');
+      sidebarToggle.innerHTML = '⬅';
+    }
+    isSidebarOpen = !isSidebarOpen;
+  });
+</script>
+
+</body>
+</html>
