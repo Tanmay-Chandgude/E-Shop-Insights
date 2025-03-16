@@ -6,7 +6,7 @@ This project is a **responsive admin dashboard** for an **e-commerce platform** 
 ---
 
 ## 📌 **Problem Statement**  
-> Create a responsive web page which shows the ecommerce admin dashboard with sidebar and statistics in cards using HTML, CSS and Bootstrap.
+Create a responsive web page which shows the ecommerce admin dashboard with sidebar and statistics in cards using HTML, CSS and Bootstrap.
 
 ---
 
