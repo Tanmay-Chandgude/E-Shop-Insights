@@ -21,12 +21,13 @@ sidebar and statistics in cards using HTML, CSS and Bootstrap.
 ---
 
 
-## 📸 **Screenshots**  
+## 📸 **Prototype**  
 ### 👉 **Dashboard View:**  
-![Dashboard Screenshot](Assets/Dashboard.png)
+![Dashboard Image](Assets/Dashboard.png)
 
-### 👉 **Sidebar Collapsed:**  
-*(Add a screenshot here)*  
+### 👉 **Sidebar Opened:**  
+![Sidebar Image](Assets/Sidebar.png)
+
 
 ---
 
